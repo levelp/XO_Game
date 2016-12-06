@@ -5,7 +5,7 @@ package model;
  */
 public class Game {
     // Размер поля
-    static final int SIZE = 4;
+    static final int SIZE = 3;
     // Пустая клетка поля
     static final char EMPTY = '_';
 
@@ -28,9 +28,11 @@ public class Game {
         border();
         // Печать клеток поля
         for (int i = 0; i < SIZE; i++) {
+            System.out.print("|");
             for (int j = 0; j < SIZE; j++) {
                 System.out.print(field[i][j]);
             }
+            System.out.print("|");
             System.out.println();
         }
         // Рамка снизу
@@ -38,9 +40,11 @@ public class Game {
     }
 
     private void border() {
+        System.out.print("|");
         for (int i = 0; i < SIZE; i++) {
             System.out.print("=");
         }
+        System.out.print("|");
         System.out.println();
     }
 
