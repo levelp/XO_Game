@@ -2,9 +2,13 @@ import model.Game;
 
 import java.util.Scanner;
 
+/**
+ * Это основной модуль программы :)
+ */
 public class Main {
-    static Scanner scanner = new Scanner(System.in);
-    static Game game = new Game();
+    // Объект получения данных от пользователя во всей программе
+    private static Scanner scanner = new Scanner(System.in);
+    private static Game game = new Game();
 
     public static void main(String[] args) {
         // Показываем игровое поле
